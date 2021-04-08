@@ -37,3 +37,4 @@ double Fmesure[1] = filter.X[3,0];
 ```
 ![Capturec](https://user-images.githubusercontent.com/82148411/114011147-313afb80-9865-11eb-9c93-a2441fc234e5.JPG)
 
+On peut améliorer le filtre en faisant varier les paramètres Q, R, et P.
