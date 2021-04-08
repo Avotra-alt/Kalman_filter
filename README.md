@@ -26,7 +26,7 @@ filter = new Kalman(A, C, 10, 100000, 100);
 ```
     
 # Utilisation  
-Une fois le filtre instancier, il suffit de mettre vos mésures dans un tableau de taille (nx1) (n: nombre d'états mesurés) et d'utiliser la méthode update du filtre pour filtrer vos mésures.  
+Une fois le filtre instancié, il suffit de mettre vos mésures dans un tableau de taille (nx1) (n: nombre d'états mesurés) et d'utiliser la méthode update du filtre pour filtrer vos mésures.  
   
 Exemple :   
 ```c#
