@@ -17,7 +17,7 @@ double[,] a = { { 1, 0, 0, 0 },
                 { 0, dt, 0, 1 } },  
                   
 double[,]c = { { 0, 0, 1, 0 },   
-                { 0, 0, 0, 1 } };  
+                { 0, 0, 0, 1 } };    
 Matrix<double> A = Matrix<double>.Build.DenseOfArray(a);  
 Matrix<double> C = Matrix<double>.Build.DenseOfArray(c);  
 filter = new Kalman(A, C, 10, 100000, 100);  
