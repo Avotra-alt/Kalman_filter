@@ -1,4 +1,4 @@
-# c# Filtre de Kalman
+# c# Filtre de Kalman temps réel
 
 Ceci est une classe que j'ai creé en c# dans le cadre d'un projet robotique.  
   
