@@ -11,22 +11,27 @@ Il y a 3 possibilités pour instancier le filtre
 * Soit en créant tous les matrices et les utiliser pour instancier la classe.
   
 Exemple :  
+```c#
 double[,] a = { { 1, 0, 0, 0 },   
                 { 0, 1, 0, 0 },   
                 { dt, 0, 1, 0 },   
-                { 0, dt, 0, 1 } },  
+                { 0, dt, 0, 1 } };  
                   
 double[,]c = { { 0, 0, 1, 0 },   
-                { 0, 0, 0, 1 } };    
+                { 0, 0, 0, 1 } };
+
 Matrix<double> A = Matrix<double>.Build.DenseOfArray(a);  
 Matrix<double> C = Matrix<double>.Build.DenseOfArray(c);  
-filter = new Kalman(A, C, 10, 100000, 100);  
+filter = new Kalman(A, C, 10, 100000, 100); 
+```
     
 # Utilisation  
 Une fois le filtre instancier, il suffit de mettre vos mésures dans un tableau de taille (nx1) (n: nombre d'états mesurés) et d'utiliser la méthode update du filtre pour filtrer vos mésures.  
   
 Exemple :   
+```c#
 double[,] Mesures = { { mesure[0] }, { mesure[1] } };  
 filter.update(Mesures);  
 double Fmesure[0] = filter.X[2,0];  
-double Fmesure[1] = filter.X[3,0];  
+double Fmesure[1] = filter.X[3,0];
+```
