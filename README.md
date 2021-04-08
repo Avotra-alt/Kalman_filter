@@ -10,7 +10,7 @@ Il y a 3 possibilités pour instancier le filtre
 * Soit en utilisant vos propres matrices d'état et d'observation. Il faut alors donner les valeurs des bruits de mésure,d'états et la covariance des érreurs.
 * Soit en créant tous les matrices et les utiliser pour instancier la classe.
   
-Voici un code en C# :
+Exemple:  
 double[,] a = { { 1, 0, 0, 0 },   
                 { 0, 1, 0, 0 },   
                 { dt, 0, 1, 0 },   
